@@ -1,0 +1,74 @@
+/*for the bug in sub section close button*/
+i.close-button-on{
+    left: -167px !important;
+}
+
+div#content{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, auto);
+    padding-bottom: 25px !important;
+}
+
+/*Nature Photography*/
+h3#nature-header{
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    margin-top: 40px;
+    text-align: center;
+    color: #444B4E;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    opacity: 0.7;
+}
+div#nature-images{
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+div.naturepic{
+    height: 500px;
+    margin: 25px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: transform 1s;
+}
+div.naturepic:hover{
+    transform: scale(0.98);
+}
+
+h4#nature-footer{
+    grid-column: 1 / 8;
+    grid-row: 3 / 4;
+    margin-top: 15px;
+    text-align: center;
+    color: #444B4E;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+h4#nature-footer a{
+    opacity: 0.5;
+    color: #444B4E;
+    text-decoration: none;
+}
+h4#nature-footer a:hover{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px){
+    h3#nature-header{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 400px){
+    div#content{
+        padding-left: 0px !important;
+        padding-right: 0px;
+        overflow: hidden;
+    }
+}
